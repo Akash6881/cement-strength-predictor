@@ -1,5 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+import joblib
+
+
+scaler = joblib.load('./models/normal_scaler.pkl')
 
 
 def index(request):
@@ -22,4 +26,10 @@ def predict(request):
     ca = float(ca)
     fa = request.GET.get('fa')
     fa = float(fa)
+
+
+
+    x_sclaed = scaler.transform([[cement, slag, Flyash, Water, Superplasticizer, ca, fa]])
+
+
     return HttpResponse("hellp")
