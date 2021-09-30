@@ -89,40 +89,46 @@
         </a>
       </div>
 
-    
-    <form>
+    <div class="container">
+    <form action = '/predict' method="get">
+
+
       <div class="row m-5">
         <div class="col-3">
-          <input type="text" class="form-control" id = "cement" placeholder="Cement">
+          <input type="number" step="any" class="form-control" name = "cement" placeholder="Cement">
         </div>
         <div class="col-3">
-          <input type="text" class="form-control" placeholder="Slag">
+          <input type="text" class="form-control" name = "Slag" placeholder="Slag">
         </div>
       </div>
       <div class="row m-5">
         <div class="col-3">
-          <input type="text" class="form-control" id = "cement" placeholder="Flyash">
+          <input type="text" class="form-control" name = "Flyash" placeholder="Flyash">
         </div>
         <div class="col-3">
-          <input type="text" class="form-control" placeholder="Water">
+          <input type="text" class="form-control" name = "Water" placeholder="Water">
         </div>
       </div>
 
       <div class="row m-5">
         <div class="col-3">
-          <input type="text" class="form-control" id = "cement" placeholder="Superplasticizer ">
+          <input type="text" class="form-control" name = "Superplasticizer" placeholder="Superplasticizer ">
         </div>
         <div class="col-3">
-          <input type="text" class="form-control" placeholder="Coarse Aggregate">
+          <input type="text" class="form-control" name = "ca" placeholder="Coarse Aggregate">
         </div>
       </div>
       <div class="row m-5">
         <div class="col-3">
-          <input type="text" class="form-control" id = "cement" placeholder="Fine Aggregate">
+          <input type="text" class="form-control" name = "fa" placeholder="Fine Aggregate">
         </div>
-      </div>            
+      </div>
+
+      <input class="btn btn-primary m-5" type="submit" value="Submit">
 
     </form>
+
+    </div>
 
 
 
