@@ -44,7 +44,7 @@
     </nav>
 
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel"  class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class=""></li>
           <li data-target="#myCarousel" data-slide-to="1" class=""></li>
@@ -89,54 +89,44 @@
         </a>
       </div>
 
+
+
     <div class="container">
-    <form action = '/predict' method="get">
-
-
-      <div class="row m-5">
-        <div class="col-3">
-          <input type="number" step="any" class="form-control" name = "cement" placeholder="Cement">
-        </div>
-        <div class="col-3">
-          <input type="number" step="any" class="form-control" name = "Slag" placeholder="Slag">
-        </div>
-      </div>
-
-
-      <div class="row m-5">
-        <div class="col-3">
-          <input type="number" step="any" class="form-control" name = "Flyash" placeholder="Flyash">
-        </div>
-        <div class="col-3">
-          <input type="number" step="any" class="form-control" name = "Water" placeholder="Water">
-        </div>
-      </div>
-
-      <div class="row m-5">
-        <div class="col-3">
-          <input type="number" step="any" class="form-control" name = "Superplasticizer" placeholder="Superplasticizer ">
-        </div>
-        <div class="col-3">
-          <input type="number" step="any" class="form-control" name = "ca" placeholder="Coarse Aggregate">
-        </div>
-      </div>
-      <div class="row m-5">
-        <div class="col-3">
-          <input type="number" step="any" class="form-control" name = "fa" placeholder="Fine Aggregate">
-        </div>
-        <div class="col-3">
-          <input type="number" step="any" class="form-control" name = "age" placeholder="Age">
-        </div>
-      </div>
-
-      </div>
-
-      <input class="btn btn-primary m-5" type="submit" value="Submit">
-
-    </form>
-
+      <h2> Predict Cement Compressive strength</h2>
+    </div>
+    <div class="container mt-3">
+      <form action = '/predict' method="get">
+    <div class="input-group mb-3">
+      <span class="input-group-text">Cement_____:</span>
+      <input type="number" step="any" class="form-control" name = "cement" placeholder="Cement">
+      <span class="input-group-text">Slag</span>
+      <input type="number" step="any" class="form-control" name = "Slag" placeholder="Slag">
     </div>
 
+    <div class="input-group mb-3">
+      <span class="input-group-text">Flyash_______</span>
+      <input type="number" step="any" class="form-control" name = "Flyash" placeholder="Flyash">
+      <span class="input-group-text">Water</span>
+      <input type="number" step="any" class="form-control" name = "Water" placeholder="Water">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text">Superplasticizer________</span>
+      <input type="number" step="any" class="form-control" name = "Superplasticizer" placeholder="Superplasticizer">
+      <span class="input-group-text">Coarse Aggregate</span>
+      <input type="number" step="any" class="form-control" name = "ca" placeholder="Coarse Aggregate">
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text">Fine Aggregate</span>
+      <input type="number" step="any" class="form-control" name = "fa" placeholder="Fine Aggregate">
+      <span class="input-group-text">Age</span>
+      <input type="number" step="any" class="form-control" name = "age" placeholder="Age">
+    </div>
+      <input class="btn btn-primary m-5" type="submit" value="Submit">
+      </form>
+
+    </div>
 
 
     <!-- Optional JavaScript -->
