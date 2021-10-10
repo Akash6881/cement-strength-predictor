@@ -9,7 +9,7 @@ model = joblib.load('./models/rand_reg.pkl')
 
 def index(request):
 
-    return render(request, 'index.html')
+    return render(request, 'ml/index.html')
 
 def predict(request):
 
