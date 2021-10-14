@@ -37,5 +37,8 @@ def predict(request):
 
     y = model.predict(x_sclaed)
 
+    stuff = {
+        'ans' : y,
+    }
 
-    return HttpResponse(y)
+    return render(request,'ml/return.html', stuff)

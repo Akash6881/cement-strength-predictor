@@ -6,15 +6,12 @@
 
     <!-- Bootstrap CSS -->
     <title>Hello, world!</title>
-    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,300' rel='stylesheet' type='text/css'><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    {% load static %}
-    <link rel="stylesheet" href = "{% static 'styles.css' %}">
+
 
   </head>
   <body>
-    <!--nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="">Cemenst Strength predition</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,9 +41,9 @@
           </li>
         </ul>
       </div>
-    </nav-->
+    </nav>
 
-    <!--div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -83,31 +80,32 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div-->
+    </div>
 
-    <h1>ksnjf</h1>
 
-    <!--div class="container">
-      <h2 class="mt-10"> Predict Cement Compressive strength</h2>
-    </div-->
-    <!--div class="container mt-3">
+    <hr />
+    <div class="container">
+      <h2> Predict Cement Compressive strength</h2>
+    </div>
+
+    <div class="container mt-3">
       <form action = '/predict' method="get">
     <div class="input-group mb-3">
-      <span class="input-group-text">Cement_____:</span>
+      <span class="input-group-text">Cement :</span>
       <input type="number" step="any" class="form-control" name = "cement" placeholder="Cement">
       <span class="input-group-text">Slag</span>
       <input type="number" step="any" class="form-control" name = "Slag" placeholder="Slag">
     </div>
 
     <div class="input-group mb-3">
-      <span class="input-group-text">Flyash_______</span>
+      <span class="input-group-text">Flyash :</span>
       <input type="number" step="any" class="form-control" name = "Flyash" placeholder="Flyash">
       <span class="input-group-text">Water</span>
       <input type="number" step="any" class="form-control" name = "Water" placeholder="Water">
     </div>
 
     <div class="input-group mb-3">
-      <span class="input-group-text">Superplasticizer________</span>
+      <span class="input-group-text">Superplasticizer :</span>
       <input type="number" step="any" class="form-control" name = "Superplasticizer" placeholder="Superplasticizer">
       <span class="input-group-text">Coarse Aggregate</span>
       <input type="number" step="any" class="form-control" name = "ca" placeholder="Coarse Aggregate">
@@ -122,18 +120,16 @@
       <input class="btn btn-primary m-5" type="submit" value="Submit">
       </form>
 
-    </div-->
-    <div class="container_css">
-      wwkfnkl fkl
-    </div>
+    {% block content %}
 
+    {% endblock content %}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
